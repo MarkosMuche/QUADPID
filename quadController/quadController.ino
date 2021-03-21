@@ -1,7 +1,7 @@
 
 #include <KF.h>
-#include "QUADPID.h"
-#include "MPU6050.h"
+#include <QUADPID.h>
+#include <MPU6050.h>
 
 float sensorReturn[6];
 boolean started = 0;
