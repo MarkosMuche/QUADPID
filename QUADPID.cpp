@@ -133,6 +133,6 @@ float QUADPID::pid(float e, float esum, float ed, float kp, float ki, float kd) 
   float u = 0;
   // PID = e.Kp + ∫e.Ki + Δe.Kd
   u = kp * e + kd * ed + ki * esum;
-  u = this->minMax(u, -minControl, maxControl);
+  u = this->minMax(u, minControl, maxControl);
   return u;
 }
